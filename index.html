@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Memominki - ipad </title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="assets/css/foundation.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="assets/css/ie.css">
+	<![endif]-->
+
+	<script src="assets/js/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- container -->
+	<div class="wrap">
+		<header>
+			<img class="logo" src="assets/images/img.gif" alt="memominki"/>
+
+		</header>
+		<section id="video">
+			<iframe width="655" height="400" src="http://www.youtube-nocookie.com/embed/_u6oqcCyd0g?theme=light" frameborder="0" allowfullscreen></iframe>
+			<a href="www.facebook.com/mowimyobrazami" target="_blank" class="fb"></a>
+		</section>
+		<section id="slider">
+			<div class="images">
+				<div>
+				<img class="img_1" src="http://placekitten.com/g/240/360"/>
+				<img class="img_2" src="http://placekitten.com/240/360"/>
+				<img class="img_3" src="http://placekitten.com/g/240/360"/>
+				<img class="img_4" src="http://placekitten.com/240/360"/>
+				</div>
+			</div>
+			<div class="text">
+				<a href="#" class="gotoApp"><img src="assets/images/img.gif" alt="memominki"/></a>
+			</div>
+			
+		</section>
+		<section id="heroes">
+			<img class="title "src="assets/images/img.gif" alt="nasi bohaterowie"/>
+		</section>
+		<section id="freebies">
+			<img class="title "src="assets/images/img.gif" alt="darmowe tła" />
+
+			<a href="assets/images/wallpaper/memominki_1_1280x800.jpg" data-reveal-id="freebies_modal" class="freebi_1"><img class="img_1" src="assets/images/wallpaper/memominki_1_thumb.png"/></a>
+
+			<a href="assets/images/wallpaper/memominki_2_1280x800.jpg" data-reveal-id="freebies_modal"  class="freebi_2"><img class="img_2" src="assets/images/wallpaper/memominki_2_thumb.png"/></a>
+
+			<a href="assets/images/wallpaper/memominki_3_1280x800.jpg" data-reveal-id="freebies_modal"  class="freebi_3"><img class="img_3" src="assets/images/wallpaper/memominki_3_thumb.png"/></a>
+
+		</section>
+		<footer>
+			<a href="#" class="gotoApp"><img src="assets/images/img.gif" alt="memominki"/></a>
+		</footer>
+	</div>
+	<!-- container -->
+	<div id="freebies_modal" class="reveal-modal">
+		<div class="not_mobile">
+    	<img class="wp" src="assets/images/img.gif"/>
+    	<ul class="left">
+    		<li><input type="radio" name="size" value="1280x800"> 1280 x 800</li>
+				<li><input type="radio" name="size" value="1280x1024"> 1280 x 1024</li>
+				<li><input type="radio" name="size" value="1440x900"> 1440 x 900</li>
+    	</ul>
+    	<ul class="right">
+				<li><input type="radio" name="size" value="1680x1050"> 1680 x 1050</li>
+				<li><input type="radio" name="size" value="1920x1080"> 1920 x 1080</li>
+				<li><input type="radio" name="size" value="1920x1200"> 1920 x 1200</li>
+    	</ul>
+  	</div>
+  	<div class="mobile">
+    	<img class="wp" src="assets/images/img.gif" />
+    	<ul>
+				<li><input type="radio" name="size" value="640x960"> 640 x 960</li>
+				<li><input type="radio" name="size" value="640x1136"> 640 x 1136</li>
+    	</ul>
+    	<a class="radius button" href="assets/images/wallpaper/memominki_1_1280x800.jpg" target="_blank">Pobierz</a>
+  	</div>
+	  <a class="close-reveal-modal"><img src="assets/images/x.png" /></a>
+
+  </div>
+	<!-- Included JS Files -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
+	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>

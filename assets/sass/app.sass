@@ -1,0 +1,209 @@
+@charset "UTF-8"
+// Foundation Features
+// =============
+
+@import compass/css3
+@import modular-scale
+@import foundation/functions/all
+@import foundation/settings
+@import settings
+
+@import foundation/mixins/all
+
+$memominki-layout: smart
+@import "memominki/*.png"
+
+body
+  min-height: 3000px
+  background: #0076c5 image-url('memominki-bg-patern.png', false, true) top center repeat-x
+.wrap 
+  width: 100%
+  min-width: 1000px
+  max-width: 1330px
+  margin: 0 auto
+  //overflow: visible
+  background: transparent image-url('memominki-bg.png', false, true) top center repeat-x
+
+header
+  min-height: 550px
+  img.logo
+    @include memominki-sprite(memo1)
+    height: memominki-sprite-height(memo1)
+    width: memominki-sprite-width(memo1)
+    position: relative
+    left: 50%
+    margin-left: -430px
+
+section
+  position: relative
+  margin: auto
+  width: 1000px
+
+section#video
+  min-height: 520px
+  background: transparent image-url('memominki-video.png', false, true) top center no-repeat
+  padding: 40px 160px 80px 185px
+  a.fb
+    position: absolute
+    background: transparent
+    width: 50px
+    height: 60px
+    left: 860px
+    top: 410px
+
+section#slider
+  min-height: 588px
+  background: transparent image-url('memominki-slider-bg.png', false, true) top center no-repeat
+  position: relative
+  .text
+    float: left
+    position: relative
+    width: 400px
+    height: 520px
+    a.gotoApp 
+      position: absolute
+      bottom: 35px
+      left: 22px
+      img
+        @include memominki-sprite(memo2)
+        height: memominki-sprite-height(memo2)
+        width: memominki-sprite-width(memo2)
+
+  .images
+    width: 240px
+    height: 360px
+    float: left
+    margin: 100px 40px 80px 163px
+    div.orbit-wrapper div.slider-nav span 
+      width: 40px
+      height: 65px
+      &.right
+        right: -45px
+      &.left
+        left: -45px
+    img
+      display: none
+      &:first-child
+        display: block
+
+section#heroes
+  min-height: 500px
+  background: transparent image-url('memominki-heroes.png', false, true) top center no-repeat
+  img.title
+    @include memominki-sprite(memo3)
+    height: memominki-sprite-height(memo3)
+    width: memominki-sprite-width(memo3)
+    position: relative
+    top: 122px
+    left: 136px
+
+
+section#freebies
+  min-height: 668px
+  margin-top: -100px
+  background: transparent image-url('memominki-freebies.png', false, true) top center no-repeat
+  img.title
+    @include memominki-sprite(memo4)
+    height: memominki-sprite-height(memo4)
+    width: memominki-sprite-width(memo4)
+    position: relative
+    top: 64px
+    left: 130px
+
+  a
+    position: absolute
+    width: 270px
+    height: 400px
+    overflow: hidden
+    &.freebi_1
+      left: 190px
+      top: 150px
+    &.freebi_2
+      left: 434px
+      top: 104px
+    &.freebi_3
+      left: 680px
+      top: 66px
+    img
+      display: none
+      margin-bottom: 400px
+
+footer
+  min-height: 260px
+  background: #0076c5
+  border-top: 1px solid white
+  position: relative
+  a.gotoApp 
+    position: absolute
+    margin-left: -117px
+    top: -160px
+    left: 50%
+    img
+      @include memominki-sprite(memo2)
+      height: memominki-sprite-height(memo2)
+      width: memominki-sprite-width(memo2)
+
+#freebies_modal
+  background: transparent image-url('reval_bg.png', false, true) top center no-repeat
+  height: image-height('reval_bg.png')
+  width: image-width('reval_bg.png')
+  margin-left: -348px
+  -webkit-box-shadow: none
+  -moz-box-shadow: none
+  box-shadow: none
+  .not_mobile
+    width: 60%
+    float: left
+    position: relative
+    padding-top: 255px
+    padding-right: 40px
+    img
+      position: absolute
+      background: transparent image-url('wallpaper/memominki_1_thumb.png', false, true) top center no-repeat
+      top: 22px
+      left: 16px
+      width: 263px
+      height: 165px
+      &._1_
+        background: transparent image-url('wallpaper/memominki_1_thumb.png', false, true) top center no-repeat
+      &._2_
+        background: transparent image-url('wallpaper/memominki_2_thumb.png', false, true) top center no-repeat
+      &._3_
+        background: transparent image-url('wallpaper/memominki_3_thumb.png', false, true) top center no-repeat
+      
+  .mobile
+    width: 40%
+    float: right
+    position: relative
+    padding-top: 255px
+    img
+      position: absolute
+      background: transparent image-url('wallpaper/memominki_1_mobile_thumb.png', false, true) top center no-repeat
+      width: 109px
+      height: 164px
+      top: 22px
+      left: 25px
+      &._1_
+        background: transparent image-url('wallpaper/memominki_1_mobile_thumb.png', false, true) top center no-repeat
+      &._2_
+        background: transparent image-url('wallpaper/memominki_2_mobile_thumb.png', false, true) top center no-repeat
+      &._3_
+        background: transparent image-url('wallpaper/memominki_3_mobile_thumb.png', false, true) top center no-repeat
+      
+    ul
+      padding-left: 10px
+  ul
+    padding: 0 8px 
+    li
+      list-style: none
+      font-size: 22px
+      padding: 0
+      margin: 0
+  .button
+    position: absolute
+    top: 376px
+    left: 166px
+  
+  .close-reveal-modal
+    top: 25px
+    right: 25px
