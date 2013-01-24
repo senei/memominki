@@ -1,0 +1,7 @@
+RewriteEngine on
+
+SetEnvIfNoCase Request_URI .swf$ no-gzip dont-vary
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{QUERY_STRING} !do=([a-zA-Z0-9_-]+)
+RewriteRule ^([a-zA-Z0-9_-]+)(/(.*)|$) $3?do=$1 [L,QSA]
