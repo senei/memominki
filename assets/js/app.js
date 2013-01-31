@@ -32,7 +32,7 @@
     event.preventDefault();
     var href = $("#freebies a").attr('href');
     var class_img = $(this).attr('href').split("_")[1];
-    alert(class_img)
+    //alert(class_img)
     $("#freebies_modal img").removeClass("_1_ _2_ _3_").addClass("_"+class_img+"_");
     $("#freebies_modal .button").attr('href', href);
     $("#freebies_modal").reveal();

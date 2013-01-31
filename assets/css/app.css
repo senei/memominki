@@ -1,21 +1,21 @@
 @charset "UTF-8";
 .memominki-sprite, header img.logo, section#slider .text a.gotoApp img, section#heroes img.title, section#freebies img.title, footer a.gotoApp img, footer .con .six img.img-0, footer .con .six img.img-1, footer .con .six img.img-2, footer .con .six img.img-3, footer .con .six img.img-4, footer .con .six img.img-5 { background: url('../images/memominki-s299990f8ce.png') no-repeat; }
 
-body { min-height: 3000px; background: #0076c5 url('../images/bg-patern.png?1357907777') top center repeat-x; }
+body { min-height: 3000px; background: #0076c5 url('../images/bg-patern.png?1359625254') top center repeat-x; }
 
-.wrap { width: 100%; min-width: 1000px; max-width: 1330px; margin: 0 auto; background: transparent url('../images/bg.png?1357907877') top center repeat-x; }
+.wrap { width: 100%; min-width: 1000px; max-width: 1330px; margin: 0 auto; background: transparent url('../images/bg.png?1359625254') top center repeat-x; }
 
 header { min-height: 550px; }
 header img.logo { background-position: 0 -494px; height: 199px; width: 425px; position: relative; left: 50%; top: -20px; margin-left: -430px; }
 
 section { position: relative; margin: auto; width: 1000px; }
 
-section#video { min-height: 520px; background: transparent url('../images/video.png?1358149861') top center no-repeat; padding: 40px 160px 80px 185px; }
+section#video { min-height: 520px; background: transparent url('../images/video.png?1359625244') top center no-repeat; padding: 40px 160px 80px 185px; }
 section#video a.fb { position: absolute; background: transparent; width: 50px; height: 60px; left: 860px; top: 410px; }
 
-section#slider { min-height: 588px; background: transparent url('../images/slider-bg.png?1359618336') top center no-repeat; position: relative; }
-section#slider .text { float: left; position: relative; width: 400px; height: 520px; padding: 60px 8px; font-size: 15px; }
-section#slider .text p, section#slider .text ul { margin-bottom: 8px; }
+section#slider { min-height: 588px; background: transparent url('../images/slider-bg.png?1359625245') top center no-repeat; position: relative; }
+section#slider .text { float: left; position: relative; width: 400px; height: 520px; padding: 60px 8px; }
+section#slider .text p, section#slider .text ul { margin-bottom: 8px; font-size: 15px; }
 section#slider .text a.gotoApp { position: absolute; bottom: 35px; left: 22px; }
 section#slider .text a.gotoApp img { background-position: 0 -232px; height: 139px; width: 235px; }
 section#slider .images { width: 240px; height: 360px; float: left; margin: 100px 40px 80px 163px; }
@@ -25,10 +25,10 @@ section#slider .images div.orbit-wrapper div.slider-nav span.left { left: -45px;
 section#slider .images img { display: none; }
 section#slider .images img:first-child { display: block; }
 
-section#heroes { min-height: 500px; background: transparent url('../images/heroes.png?1358150013') top center no-repeat; }
+section#heroes { min-height: 500px; background: transparent url('../images/heroes.png?1359625247') top center no-repeat; }
 section#heroes img.title { background-position: -150px -371px; height: 123px; width: 188px; position: relative; top: 122px; left: 136px; }
 
-section#freebies { min-height: 668px; margin-top: -100px; background: transparent url('../images/freebies.png?1358150280') top center no-repeat; }
+section#freebies { min-height: 668px; margin-top: -100px; background: transparent url('../images/freebies.png?1359625249') top center no-repeat; }
 section#freebies img.title { background-position: 0 -371px; height: 80px; width: 150px; position: relative; top: 64px; left: 130px; }
 section#freebies a { position: absolute; width: 270px; height: 400px; overflow: hidden; }
 section#freebies a.freebi_1 { left: 190px; top: 150px; }
@@ -40,8 +40,9 @@ footer { min-height: 540px; background: #0076c5; color: white; border-top: 1px s
 footer h3, footer h4 { color: white; }
 footer a.gotoApp { position: absolute; margin-left: -117px; top: -160px; left: 50%; }
 footer a.gotoApp img { background-position: 0 -232px; height: 139px; width: 235px; }
-footer .con { position: relative; margin: auto; width: 1000px; font-size: 16px; background: #0076c5; }
-footer .con .six { height: 160px; }
+footer .con { position: relative; margin: auto; width: 1000px; background: #0076c5; }
+footer .con .six { height: 180px; }
+footer .con .six p { font-size: 16px; }
 footer .con .six img { float: left; width: 119px; height: 116px; margin: 30px 10px 60px; }
 footer .con .six img.img-0 { background-position: -119px 0; }
 footer .con .six img.img-1 { background-position: -238px -116px; }
@@ -50,17 +51,17 @@ footer .con .six img.img-3 { background-position: -119px -116px; }
 footer .con .six img.img-4 { background-position: 0 0; }
 footer .con .six img.img-5 { background-position: 0 -116px; }
 
-#freebies_modal { background: transparent url('../images/reval_bg.png?1358156275') top center no-repeat; height: 474px; width: 696px; margin-left: -348px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+#freebies_modal { background: transparent url('../images/reval_bg.png?1359625246') top center no-repeat; height: 474px; width: 696px; margin-left: -348px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 #freebies_modal .not_mobile { width: 60%; float: left; position: relative; padding-top: 255px; padding-right: 40px; }
-#freebies_modal .not_mobile img { position: absolute; background: transparent url('../images/wallpaper/memominki_1_thumb.png?1358163918') top center no-repeat; top: 22px; left: 16px; width: 263px; height: 165px; }
-#freebies_modal .not_mobile img._1_ { background: transparent url('../images/wallpaper/memominki_1_thumb.png?1358163918') top center no-repeat; }
-#freebies_modal .not_mobile img._2_ { background: transparent url('../images/wallpaper/memominki_2_thumb.png?1358173690') top center no-repeat; }
-#freebies_modal .not_mobile img._3_ { background: transparent url('../images/wallpaper/memominki_3_thumb.png?1358171306') top center no-repeat; }
+#freebies_modal .not_mobile img { position: absolute; background: transparent url('../images/wallpaper/memominki_1_thumb.png?1359625373') top center no-repeat; top: 22px; left: 16px; width: 263px; height: 165px; }
+#freebies_modal .not_mobile img._1_ { background: transparent url('../images/wallpaper/memominki_1_thumb.png?1359625373') top center no-repeat; }
+#freebies_modal .not_mobile img._2_ { background: transparent url('../images/wallpaper/memominki_2_thumb.png?1359625350') top center no-repeat; }
+#freebies_modal .not_mobile img._3_ { background: transparent url('../images/wallpaper/memominki_3_thumb.png?1359625332') top center no-repeat; }
 #freebies_modal .mobile { width: 40%; float: right; position: relative; padding-top: 255px; }
-#freebies_modal .mobile img { position: absolute; background: transparent url('../images/wallpaper/memominki_1_mobile_thumb.png?1358163238') top center no-repeat; width: 109px; height: 164px; top: 22px; left: 25px; }
-#freebies_modal .mobile img._1_ { background: transparent url('../images/wallpaper/memominki_1_mobile_thumb.png?1358163238') top center no-repeat; }
-#freebies_modal .mobile img._2_ { background: transparent url('../images/wallpaper/memominki_2_mobile_thumb.png?1358173832') top center no-repeat; }
-#freebies_modal .mobile img._3_ { background: transparent url('../images/wallpaper/memominki_3_mobile_thumb.png?1358171437') top center no-repeat; }
+#freebies_modal .mobile img { position: absolute; background: transparent url('../images/wallpaper/memominki_1_mobile_thumb.png?1359625374') top center no-repeat; width: 109px; height: 164px; top: 22px; left: 25px; }
+#freebies_modal .mobile img._1_ { background: transparent url('../images/wallpaper/memominki_1_mobile_thumb.png?1359625374') top center no-repeat; }
+#freebies_modal .mobile img._2_ { background: transparent url('../images/wallpaper/memominki_2_mobile_thumb.png?1359625351') top center no-repeat; }
+#freebies_modal .mobile img._3_ { background: transparent url('../images/wallpaper/memominki_3_mobile_thumb.png?1359625332') top center no-repeat; }
 #freebies_modal .mobile ul { padding-left: 10px; }
 #freebies_modal ul { padding: 0 8px; }
 #freebies_modal ul li { list-style: none; font-size: 22px; padding: 0; margin: 0; }
