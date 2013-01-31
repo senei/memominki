@@ -15,14 +15,14 @@ $memominki-layout: smart
 
 body
   min-height: 3000px
-  background: #0076c5 image-url('memominki-bg-patern.png', false, true) top center repeat-x
+  background: #0076c5 image-url('bg-patern.png', false, true) top center repeat-x
 .wrap 
   width: 100%
   min-width: 1000px
   max-width: 1330px
   margin: 0 auto
   //overflow: visible
-  background: transparent image-url('memominki-bg.png', false, true) top center repeat-x
+  background: transparent image-url('bg.png', false, true) top center repeat-x
 
 header
   min-height: 550px
@@ -32,6 +32,7 @@ header
     width: memominki-sprite-width(memo1)
     position: relative
     left: 50%
+    top: -20px
     margin-left: -430px
 
 section
@@ -41,7 +42,7 @@ section
 
 section#video
   min-height: 520px
-  background: transparent image-url('memominki-video.png', false, true) top center no-repeat
+  background: transparent image-url('video.png', false, true) top center no-repeat
   padding: 40px 160px 80px 185px
   a.fb
     position: absolute
@@ -53,13 +54,17 @@ section#video
 
 section#slider
   min-height: 588px
-  background: transparent image-url('memominki-slider-bg.png', false, true) top center no-repeat
+  background: transparent image-url('slider-bg.png', false, true) top center no-repeat
   position: relative
   .text
     float: left
     position: relative
     width: 400px
     height: 520px
+    padding: 60px 8px
+    p, ul
+      margin-bottom: 8px
+      font-size: 15px
     a.gotoApp 
       position: absolute
       bottom: 35px
@@ -88,7 +93,7 @@ section#slider
 
 section#heroes
   min-height: 500px
-  background: transparent image-url('memominki-heroes.png', false, true) top center no-repeat
+  background: transparent image-url('heroes.png', false, true) top center no-repeat
   img.title
     @include memominki-sprite(memo3)
     height: memominki-sprite-height(memo3)
@@ -101,7 +106,7 @@ section#heroes
 section#freebies
   min-height: 668px
   margin-top: -100px
-  background: transparent image-url('memominki-freebies.png', false, true) top center no-repeat
+  background: transparent image-url('freebies.png', false, true) top center no-repeat
   img.title
     @include memominki-sprite(memo4)
     height: memominki-sprite-height(memo4)
@@ -129,10 +134,13 @@ section#freebies
       margin-bottom: 400px
 
 footer
-  min-height: 260px
+  min-height: 540px
   background: #0076c5
+  color: white
   border-top: 1px solid white
   position: relative
+  h3, h4
+    color: white
   a.gotoApp 
     position: absolute
     margin-left: -117px
@@ -142,7 +150,32 @@ footer
       @include memominki-sprite(memo2)
       height: memominki-sprite-height(memo2)
       width: memominki-sprite-width(memo2)
-
+  .con
+    position: relative
+    margin: auto
+    width: 1000px
+    font-size: 16px
+    background: #0076c5
+    .six
+      height: 160px 
+      img
+        float: left
+        width: memominki-sprite-width(opis_1)
+        height: memominki-sprite-height(opis_1)
+        margin: 30px 10px 60px
+        &.img-0
+          @include memominki-sprite(opis_1)
+        &.img-1
+          @include memominki-sprite(opis_2)
+        &.img-2
+          @include memominki-sprite(opis_3)
+        &.img-3
+          @include memominki-sprite(opis_4)
+        &.img-4
+          @include memominki-sprite(opis_5)
+        &.img-5
+          @include memominki-sprite(opis_6)
+          
 #freebies_modal
   background: transparent image-url('reval_bg.png', false, true) top center no-repeat
   height: image-height('reval_bg.png')
