@@ -62,9 +62,11 @@ section#slider
     width: 400px
     height: 520px
     padding: 60px 8px
-    p, ul
-      margin-bottom: 8px
-      font-size: 15px
+    p, li, ul 
+      margin-bottom: 4px
+      font-size: 13px
+    ul 
+      margin-left: 20px
     a.gotoApp 
       position: absolute
       bottom: 35px
@@ -158,7 +160,7 @@ footer
     .six
       height: 180px 
       p
-        font-size: 16px
+        font-size: 13px
       img
         float: left
         width: memominki-sprite-width(opis_1)
@@ -176,6 +178,34 @@ footer
           @include memominki-sprite(opis_5)
         &.img-5
           @include memominki-sprite(opis_6)
+  section
+    padding-top: 100px
+
+    h4
+      font-size: 18px
+  .recommend li
+    padding: 0
+
+    a
+      background: white
+      min-height: 60px
+      display: block
+      padding: 10px 10px 4px
+      margin: 4px 4px
+      @include border-radius(5px, 5px)
+      overflow: hidden
+      span
+        width: 140px
+        height: 100px
+        //background: scale-color(#0076c5, $alpha: -50%)
+        display: block
+        position: absolute
+        top: 4px
+        left: 4px
+  .link-list 
+    a 
+      color: white
+      font-size: 10px
           
 #freebies_modal
   background: transparent image-url('reval_bg.png', false, true) top center no-repeat
@@ -230,7 +260,7 @@ footer
     padding: 0 8px 
     li
       list-style: none
-      font-size: 22px
+      font-size: 18px
       padding: 0
       margin: 0
   .button
